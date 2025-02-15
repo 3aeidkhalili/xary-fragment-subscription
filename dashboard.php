@@ -72,60 +72,59 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
         }
 
         body {
-            direction: rtl;
-            margin: 0;
-            padding: 0;
-            color: rgb(70, 70, 70);
-            background-color: #f7f7f7;
-            min-height: 100vh;
-            font-family: 'Vazir', sans-serif;
-        }
+    background-color: #f4f4f9;
+    font-family: 'Vazir', sans-serif;
+    color: #333;
+}
 
-        a {
-            text-decoration: none;
-            color: #fff;
-        }
+.container {
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
 
-        input,
-        button {
-            font-family: vazir;
-            outline: none;
-            border: none;
-            background-color: transparent;
-        }
+.alert {
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+}
 
-        #qrcodesub {
-            margin-top: 20px;
-            width: 400px;
-            height: 400px;
-            border: 2px solid #000;
-            text-align: center;
-            margin-right: auto;
-            margin-left: auto;
-        }
+.input-group .form-control {
+    border-radius: 6px;
+    padding: 10px;
+}
 
-        #jsonData {
-            margin-top: 20px;
-            font-size: 16px;
-            padding: 10px;
-            margin-right: auto;
-            margin-left: auto;
-        }
+button {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
 
-        #generateQR {
-            margin-top: 10px;
-            padding: 10px 20px;
-            font-size: 18px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+button:hover {
+    background: linear-gradient(135deg, #0056b3, #004299);
+}
 
-        footer {
-            margin-top: 20px;
-        }
+#qrcodesub {
+    display: block;
+    margin: 20px auto;
+    border: 3px dashed #007bff;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
     </style>
 </head>
 
